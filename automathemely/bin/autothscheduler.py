@@ -74,7 +74,7 @@ scheduler = SafeScheduler()
 
 while True:
     scheduler.every().day.at(get_next_run()).do(run_automathemely())
-
+    logger.info('Running... test')
     while True:
         if not scheduler.jobs:
             logger.info('Running...')

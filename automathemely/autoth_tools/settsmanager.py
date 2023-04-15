@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-import gi
-
+import sys
+import gi 
 gi.require_version('Gtk', '3.0')
 
 # noinspection PyPep8
@@ -498,4 +498,4 @@ class App(Gtk.Application):
 
 def main(user_settings):
     app = App(user_settings)
-    app.run()
+    app.run(sys.argv)

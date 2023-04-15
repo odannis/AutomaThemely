@@ -161,6 +161,9 @@ def get_installed_themes(desk_env):
 
 
 def set_theme(desk_env, t_type, theme):
+    print(t_type)
+    print(theme)
+    print(desk_env)
     if desk_env not in SUPPORTED_DESKENVS:
         raise Exception('Invalid desktop environment!')
 
